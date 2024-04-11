@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon js/index.js"
+    "dev": "nodemon index.js"
   },
   "author": "Saurav Pianist",
   "license": "ISC",
