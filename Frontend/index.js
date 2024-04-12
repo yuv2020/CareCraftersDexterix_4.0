@@ -38,7 +38,7 @@ app.get('/music',(req,res)=>{
     res.sendFile('music/index.html')
 })
 app.get('/viewblogs', async (req, res) => {
-    res.redirect('http://localhost:3000/');
+    res.redirect('http://localhost:7500');
 });
 
 app.post('/save-blog', (req, res) => {
