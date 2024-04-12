@@ -9,11 +9,11 @@
 <body>
     <%- include("../partials/header.ejs") %>
     <div class="container">
-        <form class="signup-form">
+        <form action="http://localhost:5000/app/auth/createuser" method="post" class="signup-form">
             <h2>Sign Up</h2>
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+                <input type="password" id="confirm-password" required>
             </div>
             <button type="submit">Sign Up</button>
         </form>
