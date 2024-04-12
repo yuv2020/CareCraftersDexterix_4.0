@@ -1,0 +1,11 @@
+
+.addicon{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 72rem;
+    margin-top: 29rem;
+}

@@ -25,6 +25,15 @@ app.get('/contact',(req,res)=>{
     res.sendFile("contact/index.html")
 })
 
+// viewblogs
+app.get('/viewblogs',(req,res)=>{
+    res.render(__dirname+'/views/viewblogs/patientblog.ejs')
+})
+
+app.get('/addblogs',(req,res)=>{
+    res.render(__dirname+'/views/viewblogs/modify.ejs')
+})
+
 app.get('/login',(req,res)=>{
     res.render(__dirname+'/views/authentication/login.ejs')
 })
