@@ -5,7 +5,7 @@ body {
     background-color: #f2f2f2;
     /* background-image: url("2.jpg");
     background-size: cover; */
-    background-image: url("1.jpg"), url("4.jpg") , url("3.jpg"), url("bottom2.jpg");
+    background-image: url("../assets/1.jpg"), url("../assets/4.jpg") , url("../assets/3.jpg"), url("../assets/bottom2.jpg");
     /* Set background sizes for each image */
     background-size: 33% 50%, 33% 50% ,33% 50% ,100% 50%;
     /* Set background positions */

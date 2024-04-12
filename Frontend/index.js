@@ -24,6 +24,16 @@ app.get('/about',(req,res)=>{
 app.get('/contact',(req,res)=>{
     res.sendFile("contact/index.html")
 })
+
+app.get('/login',(req,res)=>{
+    res.render(__dirname+'/views/authentication/login.ejs')
+})
+
+
+app.get('/register',(req,res)=>{
+    res.render(__dirname+'/views/authentication/register.ejs')
+})
+
 app.get('/music',(req,res)=>{
     res.sendFile('music/index.html')
 })
