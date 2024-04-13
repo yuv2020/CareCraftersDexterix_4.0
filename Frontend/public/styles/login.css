@@ -6,8 +6,8 @@ body {
     background-image: url("../assets/2.jpg");
 }
 
-.container {
-    width: 400px;
+.containerforform {
+    width: 500px;
     margin: 100px auto;
     background-color: #fff;
     padding: 20px;
