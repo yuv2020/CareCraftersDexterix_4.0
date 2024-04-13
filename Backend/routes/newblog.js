@@ -27,13 +27,12 @@ router.post('/addnote', fetchuser, [
         console.error(error.message);
         res.status(500).send("some error occured");
     }
-})
+}) 
 
 // Get all the blogs using: get "/api/blogs/fetchallnotes" . login required
-router.get('/fetchallnotes', fetchuser, async (req, res) => {
+router.get('/fetchallnotes', async (req, res) => {
     try {
-
-        const blogs = await Blogs.find({ user: req.user.id });
+        const blogs = await Blogs.find();
         res.json(blogs);
 
     } catch (error) {

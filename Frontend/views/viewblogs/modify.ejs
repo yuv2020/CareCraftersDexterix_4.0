@@ -15,10 +15,10 @@
     <h1>
       heading
     </h1>
-        <form id="newPostForm">
+        <form action="http://localhost:5000/app/notes/addnote" method="post" id="newPostForm">
           <input type="text" name="title" placeholder="Title" required>
-          <textarea name="content" placeholder="Content" required rows="10"></textarea>
-          <input type="text" name="author" placeholder="Author" required>
+          <textarea name="description" placeholder="description" required rows="10"></textarea>
+          <input type="text" name="tag" placeholder="tag" required>
           <button class="full-width" type="submit">Submit</button>
         </form>
   </div>
