@@ -35,7 +35,9 @@ app.get('/addblogs',(req,res)=>{
 })
 
 app.get('/login',(req,res)=>{
+   
     res.render(__dirname+'/views/authentication/login.ejs')
+    
 })
 
 
@@ -43,27 +45,6 @@ app.get('/register',(req,res)=>{
     res.render(__dirname+'/views/authentication/register.ejs')
 })
 
-app.get('/music',(req,res)=>{
-    res.sendFile('music/index.html')
-})
-app.get('/viewblogs', async (req, res) => {
-    res.redirect('http://localhost:7500');
-});
-
-app.post('/save-blog', (req, res) => {
-  const { title, content, author } = req.body;
-  const filename = `${title}${author}.txt`;
-
-  fs.writeFile(`database/${filename}`, content, (err) => {
-      if (err) {
-          console.error('Error writing to file:', err);
-          res.status(500).send('Error writing to file');
-      } else {
-          console.log('File has been written successfully.');
-          res.sendStatus(200);
-      }
-  });
-});
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);   
   });

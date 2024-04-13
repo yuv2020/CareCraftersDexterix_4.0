@@ -102,13 +102,13 @@ router.post('/login', [
     }
 
     const authtoken = jwt.sign(data, JWT_SECRET);
-    // console.log(jwtData);
+    console.log(authtoken);
     // res.json(user);
     // if(authtoken){
     //   res.redirect("http://localhost:3000/");
     // }
     // res.json({ authtoken });
-    res.json({ authtoken, user: data.user });
+    return res.json({ authtoken, user: data.user });
 
 
   } catch (error) {
