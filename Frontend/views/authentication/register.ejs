@@ -8,7 +8,7 @@
 </head>
 <body>
     <%- include("../partials/header.ejs") %>
-    <div class="container">
+    <div class="containerforform">
         <form action="http://localhost:5000/app/auth/createuser" method="post" class="signup-form">
             <h2>Sign Up</h2>
             <div class="form-group">
@@ -27,7 +27,7 @@
                 <label for="confirm-password">Confirm Password:</label>
                 <input type="password" id="confirm-password" required>
             </div>
-            <button type="submit">Sign Up</button>
+            <button  style="margin-left: 25px; margin-top: 10px; color: white; background-color: orange; width: 90%" type="submit">Sign Up</button>
         </form>
     </div>
 </body>
